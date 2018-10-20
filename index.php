@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: پرداخت بانک ملت - فروش پست ها
-Version: 1.0
+Plugin Name: درگاه پرداخت بانک ملت - فروش پست ها
+Version: 1.1
 Description:  درگاه پرداخت بانک ملت برای افزونه فروش پست ها post shop
-Plugin URI: http://behnam-rasouli.ir/p/post-shop/
+Plugin URI: https://behnam-rasouli.ir/p/post-shop/
 Author: بهنام رسولی
-Author URI: http://behnam-rasouli.ir/
+Author URI: https://behnam-rasouli.ir/
 License: GPL3
 */
 
@@ -47,12 +47,12 @@ function ps_mellat_check_requirement() {
 		if ( ! class_exists( 'ps_payment_gateway' ) ) {
 			echo '<div class="notice notice-warning is-dismissible">';
 			echo 'برای استفاده از این درگاه پرداخت نیاز به افزونه فروش پست ها است،لطفا این پلاگین رو خریداری کنید و نصب فعال کنید.';
-			echo '<br><a href="http://behnam-rasouli.ir/p/post-shop?source=pay_plugin">اطلاعات بیشتر ...</a>';
+			echo '<br><a href="https://behnam-rasouli.ir/p/post-shop?source=pay_plugin">اطلاعات بیشتر ...</a>';
 			echo '</div>';
 		} elseif ( version_compare( PS_VERSION, '5.5.0', '<' ) ) {
 			echo '<div class="notice notice-warning is-dismissible">';
 			echo 'برای استفاده از این پلاگین ورژن افزونه فروش پست ها باید حداقل 5.5 باشد!';
-			echo '<br><a href="http://behnam-rasouli.ir/p/post-shop?source=pay_plugin">اطلاعات بیشتر ...</a>';
+			echo '<br><a href="https://behnam-rasouli.ir/p/post-shop?source=pay_plugin">اطلاعات بیشتر ...</a>';
 			echo '</div>';
 		}
 	}
